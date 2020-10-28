@@ -37,7 +37,7 @@ spec:
           ports:
           {{ if eq .Values.backendType "http" }}
             - name: http
-              containerPort: 80
+              containerPort: 8080
               protocol: TCP
           {{ else if eq .Values.backendType "grpc" }} 
             - name: grpc

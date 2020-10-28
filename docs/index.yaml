@@ -3,7 +3,17 @@ entries:
   base-service:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-10-27T15:38:46.3084719-04:00"
+    created: "2020-10-28T07:29:51.5409736-04:00"
+    description: A Helm chart for Kubernetes
+    digest: d2c987323c335a5d45df1465106efde62ceac8902905e640576d14dd02aa1df0
+    name: base-service
+    type: application
+    urls:
+    - base-service-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2020-10-28T07:29:51.5393302-04:00"
     description: A Helm chart for Kubernetes
     digest: df8020ec15e5bc9fe35a92ab233f9312bd1adce9422744e828819b85129167d1
     name: base-service
@@ -11,4 +21,4 @@ entries:
     urls:
     - base-service-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-27T15:38:46.3074361-04:00"
+generated: "2020-10-28T07:29:51.5338503-04:00"
