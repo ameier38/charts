@@ -11,4 +11,24 @@ entries:
     urls:
     - https://github.com/ameier38/charts/releases/download/base-service-0.1.2/base-service-0.1.2.tgz
     version: 0.1.2
+  eventstore:
+  - apiVersion: v1
+    appVersion: 5.0.8
+    created: "2020-10-28T20:13:39.596661544Z"
+    description: A Helm chart for Kubernetes EventStore.
+    digest: b65fc6b870b304c41dd4e88e9b296883b035ba6066f221f9b149c3c985175ba5
+    home: https://eventstore.org/
+    icon: https://eventstore.org/images/ouro-full.svg
+    keywords:
+    - eventstore
+    maintainers:
+    - email: ameier38@gmail.com
+      name: ameier38
+    name: eventstore
+    sources:
+    - https://github.com/EventStore/eventstore-docker
+    - https://github.com/EventStore/EventStore
+    urls:
+    - https://github.com/ameier38/charts/releases/download/eventstore-0.1.0/eventstore-0.1.0.tgz
+    version: 0.1.0
 generated: "2020-10-28T15:24:09.546748774Z"
