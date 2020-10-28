@@ -35,17 +35,9 @@ spec:
           imagePullPolicy: {{ .Values.imagePullPolicy }}
           {{ if has .Values.backendType (list "grpc" "http") }}
           ports:
-          {{ if eq .Values.backendType "http" }}
-            - name: http
-              containerPort: 8080
+            - name: {{ .Values.backendType }}
+              containerPort: {{ .Values.containerPort }}
               protocol: TCP
-          {{ else if eq .Values.backendType "grpc" }} 
-            - name: grpc
-              containerPort: 50051
-              protocol: TCP
-          {{ else }}
-            {{ fail "Invalid backend type"}}
-          {{ end }}
           {{ end }}
           livenessProbe:
           {{ if eq .Values.backendType "grpc" }}
