@@ -8,19 +8,10 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-  {{ if eq .Values.backendType "grpc" }}
-    - name: grpc
+    - name: {{ .Values.backendType }}
       port: {{ .Values.service.port }}
-      targetPort: grpc
+      targetPort: {{ .Values.backendType }}
       protocol: TCP
-  {{ else if eq .Values.backendType "http" }}
-    - name: http
-      port: {{ .Values.service.port }}
-      targetPort: http
-      protocol: TCP
-  {{ else }}
-    {{ fail "Invalid backend type" }}
-  {{ end }}
   selector:
     {{- include "base-service.selectorLabels" . | nindent 4 }}
 {{ end }}

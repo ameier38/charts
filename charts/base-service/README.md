@@ -19,9 +19,6 @@ Helm chart used for services.
 1. Make changes.
 2. Bump version in [Chart.yaml](./Chart.yaml).
 3. Update [CHANGELOG.md](./CHANGELOG.md).
-4. Run `helm package charts/base-service`.
-5. Move `base-service-<version>.tgz` into `docs` directory.
-6. Run `helm repo index docs`. 
-7. Commit changes.
-8. Create PR.
-9. Merge PR (GitHub pages will redeploy).
+4. Commit changes.
+5. Create PR.
+6. Merge PR (GitHub pages will redeploy).
