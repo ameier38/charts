@@ -12,8 +12,10 @@ jobs:
       - name: Lint Base Service
         uses: docker://alpine/helm:latest
         with: 
-          entrypoint: helm lint charts/base-service
+          entrypoint: helm
+          args: lint charts/base-service
       - name: Lint EventStore
         uses: docker://alpine/helm:latest
-        with: 
-          entrypoint: helm lint charts/eventstore
+        with:
+          entrypoint: helm
+          args: lint charts/eventstore
