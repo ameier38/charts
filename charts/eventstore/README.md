@@ -72,7 +72,6 @@ The following table lists the configurable parameters of the Event Store chart a
 | `podDisruptionBudget.enabled`        | Enable a pod disruption budget for nodes                                      | `false`                      |
 | `podDisruptionBudget.minAvailable`   | Number of pods that must still be available after eviction                    | `2`                          |
 | `podDisruptionBudget.maxUnavailable` | Number of pods that can be unavailable after eviction                         | `nil`                        |
-| `extIp`                              | External IP address                                                           | `0.0.0.0`                    |
 | `intHttpPort`                        | Internal HTTP port                                                            | `2112`                       |
 | `extHttpPort`                        | External HTTP port                                                            | `2113`                       |
 | `intTcpPort`                         | Internal TCP port                                                             | `1112`                       |
