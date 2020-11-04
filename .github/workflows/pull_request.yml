@@ -9,12 +9,17 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd && ls
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
       - name: Lint Base Service
         uses: docker://alpine/helm:latest
         with: 
           entrypoint: helm
           args: lint charts/base-service
+
       - name: Lint EventStore
         uses: docker://alpine/helm:latest
         with:
