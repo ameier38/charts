@@ -9,6 +9,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - run: pwd && ls
       - name: Lint Base Service
         uses: docker://alpine/helm:latest
         with: 
