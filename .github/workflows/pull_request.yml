@@ -1,0 +1,17 @@
+name: Lint Charts
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint Base Service
+        uses: docker://alpine/helm:latest
+        run: helm lint charts/base-service
+      - name: Lint EventStore
+        uses: docker://alpine/helm:latest
+        run: helm lint charts/eventstore
