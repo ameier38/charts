@@ -13,6 +13,25 @@ entries:
     version: 0.1.2
   eventstore:
   - apiVersion: v1
+    appVersion: 5.0.9
+    created: "2020-11-18T00:19:15.547146129Z"
+    description: A Helm chart for Kubernetes EventStore.
+    digest: 55186f628226424d978129dc5cb57c9dad26216e9fb9e595471d37d8a9fef7ad
+    home: https://eventstore.org/
+    icon: https://eventstore.org/images/ouro-full.svg
+    keywords:
+    - eventstore
+    maintainers:
+    - email: ameier38@gmail.com
+      name: ameier38
+    name: eventstore
+    sources:
+    - https://github.com/EventStore/eventstore-docker
+    - https://github.com/EventStore/EventStore
+    urls:
+    - https://github.com/ameier38/charts/releases/download/eventstore-0.1.2/eventstore-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v1
     appVersion: 5.0.8
     created: "2020-11-04T12:19:29.492280936Z"
     description: A Helm chart for Kubernetes EventStore.
