@@ -6,7 +6,7 @@
 image: eventstore/eventstore
 ##
 ## Event Store image tag
-imageTag: release-5.0.8
+imageTag: release-5.0.9
 ##
 ## Specify a imagePullPolicy
 ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
@@ -113,16 +113,13 @@ persistence:
   mountPath: /var/lib/eventstore
   annotations: {}
 
-resources: {}
-  ## If you want to specify resources, uncomment the following
-  ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-  ##
-  # limits:
-  #  cpu: 100m
-  #  memory: 128Mi
-  # requests:
-  #  cpu: 100m
-  #  memory: 128Mi
+resources:
+  requests:
+   cpu: 250m
+   memory: 500Mi
+  limits:
+   cpu: 500m
+   memory: 1Gi
 
 nodeSelector: {}
 
