@@ -88,7 +88,7 @@ The following table lists the configurable parameters of the Event Store chart a
 | `persistence.size`                   | Size of data volume                                                           | `8Gi`                        |
 | `persistence.mountPath`              | Mount path of data volume                                                     | `/var/lib/eventstore`        |
 | `persistence.annotations`            | Annotations for PVC                                                           | `{}`                         |
-| `resources`                          | CPU/Memory resource request/limits                                            | Memory: `256Mi`, CPU: `100m` |
+| `resources`                          | CPU/Memory resource request/limits                                            | Memory: `500Mi`, CPU: `250m` |
 | `nodeSelector`                       | Node labels for pod assignment                                                | `{}`                         |
 | `podAnnotations`                     | Pod annotations                                                               | `{}`                         |
 | `tolerations`                        | Toleration labels for pod assignment                                          | `[]`                         |
