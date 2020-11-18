@@ -13,6 +13,10 @@ spec:
   selector:
     app.kubernetes.io/name: {{ include "eventstore.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
+  # We want all pods in the StatefulSet to have their addresses published for
+  # the sake of the other EventStore pods even before they're ready, since they
+  # have to be able to talk to each other in order to become ready.
+  publishNotReadyAddresses: true
   ports:
     - name: ext-tcp-port
       protocol: TCP
