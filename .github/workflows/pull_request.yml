@@ -25,3 +25,9 @@ jobs:
         with:
           entrypoint: helm
           args: lint charts/eventstore
+
+      - name: Lint Metabase
+        uses: docker://alpine/helm:latest
+        with:
+          entrypoint: helm
+          args: lint charts/metabase
