@@ -1,20 +1,13 @@
-# ⚠️ Repo Archive Notice
-
-As of Nov 13, 2020, charts in this repo will no longer be updated.
-For more information, see the Helm Charts [Deprecation and Archive Notice](https://github.com/helm/charts#%EF%B8%8F-deprecation-and-archive-notice), and [Update](https://helm.sh/blog/charts-repo-deprecation/).
-
 # Metabase
 
 [Metabase](http://metabase.com) is the easy, open source way for everyone in your company to ask questions and learn from data.
 
-## DEPRECATION NOTICE
-
-This chart is deprecated and no longer supported.
-
 ## TL;DR;
 
 ```bash
-$ helm install stable/metabase
+helm repo add ameier38 https://ameier38.github.io/charts
+helm repo update
+helm install -n metabase ameier38/metabase
 ```
 
 ## Introduction
@@ -30,7 +23,7 @@ This chart bootstraps a [Metabase](https://github.com/metabase/metabase) deploym
 To install the chart with the release name `my-release`:
 
 ```bash
-$ helm install --name my-release stable/metabase
+helm install -n my-release ameier38/metabase
 ```
 
 The command deploys Metabase on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation.
@@ -42,7 +35,7 @@ The command deploys Metabase on the Kubernetes cluster in the default configurat
 To uninstall/delete the `my-release` deployment:
 
 ```bash
-$ helm delete my-release
+helm delete my-release
 ```
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
@@ -120,9 +113,9 @@ The above parameters map to the env variables defined in [metabase](http://githu
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
 ```bash
-$ helm install --name my-release \
+helm install --name my-release \
   --set timeZone=US/Pacific,password.complexity=strong,password.length=10 \
-    stable/metabase
+    ameier38/metabase
 ```
 
 The above command sets the time zone to `US/Pacific`, `strong` user password complexity and minimum length at `10`
@@ -130,7 +123,7 @@ The above command sets the time zone to `US/Pacific`, `strong` user password com
 Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,
 
 ```bash
-$ helm install --name my-release -f values.yaml stable/metabase
+helm install --name my-release -f values.yaml ameier38/metabase
 ```
 
 > **Tip**: You can use the default [values.yaml](values.yaml)
