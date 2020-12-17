@@ -69,4 +69,19 @@ entries:
     urls:
     - https://github.com/ameier38/charts/releases/download/eventstore-0.1.0/eventstore-0.1.0.tgz
     version: 0.1.0
+  metabase:
+  - apiVersion: v1
+    appVersion: v0.36.3
+    created: "2020-12-17T14:12:49.454500693Z"
+    description: The easy, open source way for everyone in your company to ask questions
+      and learn from data.
+    digest: 2e41d0f4b6b2a3a050868d06dccc3a6cfd7405237d8eab189c2e371a18d54ee8
+    home: http://www.metabase.com/
+    icon: http://www.metabase.com/images/logo.svg
+    name: metabase
+    sources:
+    - https://github.com/metabase/metabase
+    urls:
+    - https://github.com/ameier38/charts/releases/download/metabase-0.13.2/metabase-0.13.2.tgz
+    version: 0.13.2
 generated: "2020-10-28T15:24:09.546748774Z"
