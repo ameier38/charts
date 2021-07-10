@@ -35,8 +35,8 @@ clusterSize: 1
 ## set in a separate `creds-values.yaml` file so that you can
 ## keep it out of source control and read during deployment.
 ## See the `ci` directory in this repo for the default values.
-## ref: https://eventstore.org/docs/http-api/security/index.html
-## ref: https://github.com/helm/helm/blob/master/docs/charts_hooks.md
+## ref: https://developers.eventstore.com/clients/dotnet/5.0/security/users.html#default-users 
+## ref: https://helm.sh/docs/topics/charts_hooks/
 admin:
   ##
   ## Service type for admin interface.
