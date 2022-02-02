@@ -31,3 +31,15 @@ jobs:
         with:
           entrypoint: helm
           args: lint charts/metabase
+
+      - name: Update Airbyte Dependencies
+        uses: docker://alpine/helm:latest
+        with:
+          entrypoint: helm
+          args: dep update charts/airbyte
+
+      - name: Lint Airbyte
+        uses: docker://alpine/helm:latest
+        with:
+          entrypoint: helm
+          args: lint charts/airbyte
